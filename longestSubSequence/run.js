@@ -45,9 +45,9 @@ function reduceCommonSequences(a, b){
     var ret = [];
     for(var i = 0; i < a.length -1 ;i++){
         for(var j = 0; j < b.length -1; j++){
-            if (ret.length && ret[ret.length-1].length >= a[i].length) continue;
+            if (ret.length && ret[ret.length-1].length >= b[i].length) continue;
             if (arrayEquals(a[i],b[j])){
-                ret.push(a[i]);
+                ret.push(b[i]);
             }
         }
     }
